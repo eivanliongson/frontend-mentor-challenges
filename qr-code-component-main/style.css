@@ -19,7 +19,7 @@ body {
 }
 
 .qr-container {
-  height: 65vh;
+  height: 70vh;
   width: 20%;
   background-color: hsl(0, 0%, 100%);
   display: flex;
