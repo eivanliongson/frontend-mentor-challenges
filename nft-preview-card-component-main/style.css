@@ -1,0 +1,104 @@
+:root {
+  --mainBg: hsl(217, 54%, 11%);
+  --cardBg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --softBlue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  min-height: 100vh;
+  background-color: var(--mainBg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 18em;
+  padding: 1.5em;
+  background-color: var(--cardBg);
+  border-radius: 1em;
+  box-shadow: 1px 11px 28px -14px rgba(0, 0, 0, 0.56);
+  -webkit-box-shadow: 1px 11px 28px -14px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 1px 11px 28px -14px rgba(0, 0, 0, 0.56);
+  text-align: left;
+  position: relative;
+}
+
+main * {
+  margin-bottom: 0.8em;
+}
+
+.equi {
+  width: 100%;
+  border-radius: 1em;
+}
+
+.equi:hover{
+    opacity: .6;
+}
+
+h1 {
+  color: var(--white);
+  font-weight: 600;
+}
+
+p {
+  color: var(--softBlue);
+  font-weight: 300;
+}
+
+ul {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+
+li {
+  font-weight: 400;
+  color: var(--cyan);
+}
+
+.eth {
+  list-style-image: url(./images/icon-ethereum.svg);
+  color: var(--cyan);
+}
+
+.clock {
+  list-style-image: url(./images/icon-clock.svg);
+  color: var(--softBlue);
+}
+
+hr {
+  color: var(--line);
+}
+
+.container {
+  color: var(--white);
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.container img {
+  height: 30px;
+  width: 30px;
+  border-radius: 1em;
+  border: 2px solid var(--white);
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--white);
+}
