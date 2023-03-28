@@ -19,14 +19,14 @@ body {
 }
 
 .qr-container {
-  height: 60vh;
+  height: 65vh;
   width: 20%;
   background-color: hsl(0, 0%, 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 1em;
+  gap: 2em;
   padding: 1em;
   border-radius: 2em;
 }
@@ -45,17 +45,17 @@ body {
 
 .sub {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 400;
   color: var(--grayBlue);
 }
 
 
 
-@media (max-width: 1400px) {
+@media (max-width: 1400px){
   
   .qr-container {
-    height: 65vh;
+    height: 80vh;
     width: 25%;
   }
   
@@ -75,11 +75,11 @@ body {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   
   .qr-container {
-    height: 70vh;
-    width: 70%;
+    height: 80vh;
+    width: 50%;
   }
   
   .qr-container img {
@@ -89,10 +89,10 @@ body {
   }
   
   .heading {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
   
   .sub {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
