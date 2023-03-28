@@ -73,3 +73,26 @@ body {
     font-size: 1.25rem;
   }
 }
+
+
+@media (max-width: 600px) {
+  
+  .qr-container {
+    height: 70vh;
+    width: 70%;
+  }
+  
+  .qr-container img {
+    height: 40vh;
+    width: 100%;
+    border-radius: 1em;
+  }
+  
+  .heading {
+    font-size: 1.75rem;
+  }
+  
+  .sub {
+    font-size: 1.25rem;
+  }
+}
