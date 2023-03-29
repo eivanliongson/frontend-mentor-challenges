@@ -1,1 +1,1 @@
-**Progress:** No preview state in this solution
+**Progress:** No preview state in this solution.
