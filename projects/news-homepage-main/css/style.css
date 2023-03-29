@@ -1,0 +1,167 @@
+:root {
+  --softOrange: hsl(35, 77%, 62%);
+  --softRed: hsl(5, 85%, 63%);
+
+  --offWhite: hsl(36, 100%, 99%);
+  --grayBlue: hsl(233, 8%, 79%);
+  --darkGrayBlue: hsl(236, 13%, 42%);
+  --darkBlue: hsl(240, 100%, 5%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  min-height: 100vh;
+  margin: 4em 6em 2em 6em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-right ul {
+  font-weight: 400;
+  display: flex;
+  gap: 1em;
+  list-style: none;
+}
+
+.nav-right a {
+  color: var(--darkGrayBlue);
+  text-decoration: none;
+}
+
+.nav-right a:hover {
+  color: var(--softRed);
+}
+
+.hero-section {
+  margin-top: 1.4em;
+  gap: 2em;
+  display: flex;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.left {
+  max-width: 70%;
+}
+
+.heading {
+  margin-top: 1em;
+  display: flex;
+  gap: 2em;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.desc {
+  width: 100%;
+  line-height: 1.5em;
+  color: var(--darkGrayBlue);
+}
+
+.read-more {
+  margin: 2em 0;
+  border: none;
+  height: 50px;
+  width: 200px;
+  background-color: var(--softRed);
+  color: var(--offWhite);
+  font-weight: 700;
+}
+
+.read-more:hover {
+  cursor: pointer;
+  color: var(--offWhite);
+  background-color: var(--darkBlue);
+}
+
+.right {
+  padding: 1em;
+  background-color: var(--darkBlue);
+  color: var(--offWhite);
+}
+
+.right h2 {
+  color: var(--softOrange);
+}
+
+.right ul {
+  list-style: none;
+}
+
+.right li {
+  padding: 1em 0;
+}
+
+.right li h2,
+p {
+  padding: 1em 0;
+}
+
+.right p {
+  font-size: 0.95rem;
+  color: var(--darkGrayBlue);
+}
+
+.right h3:hover {
+  cursor: pointer;
+  color: var(--softOrange);
+}
+
+.article-row {
+  margin-top: 2em;
+}
+
+.article-row ul {
+  display: flex;
+  gap: 8em;
+}
+
+.article-row ul li {
+  list-style: none;
+  max-width: 20em;
+  display: flex;
+  gap: 1em;
+}
+
+.article-row ul li p,
+.article-row ul li h4 {
+  padding-top: 1em;
+}
+
+.article-row ul li h3 {
+  color: var(--grayBlue);
+  font-size: 2rem;
+}
+
+.article-row ul li p {
+  color: var(--darkGrayBlue);
+}
+
+.article-row ul li h4:hover {
+  cursor: pointer;
+  color: var(--softRed);
+}
+
+
+footer {
+    margin-top: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
