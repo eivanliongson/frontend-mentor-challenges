@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
 :root {
   --softOrange: hsl(35, 77%, 62%);
   --softRed: hsl(5, 85%, 63%);
@@ -16,152 +18,154 @@
 
 body {
   font-family: "Inter", sans-serif;
-  font-size: 1.125rem;
-  min-height: 100vh;
-  margin: 4em 6em 2em 6em;
+  font-size: 15px;
+  font-weight: 400;
 }
 
-nav {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.nav-bar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-right ul {
-  font-weight: 400;
+.nav {
   display: flex;
-  gap: 1em;
   list-style: none;
+  gap: 3em;
 }
 
-.nav-right a {
+.nav a {
   color: var(--darkGrayBlue);
-  text-decoration: none;
+  font-weight: 700;
 }
 
-.nav-right a:hover {
-  color: var(--softRed);
-}
-
-.hero-section {
-  margin-top: 1.4em;
-  gap: 2em;
+.front-page .container {
   display: flex;
+  gap: 2em;
 }
 
-.hero-img {
+.left-side img {
   width: 100%;
 }
 
-.left {
-  max-width: 70%;
-}
-
-.heading {
-  margin-top: 1em;
+.headline {
+  margin-top: 2em;
   display: flex;
-  gap: 2em;
+  justify-content: space-between;
 }
 
-.heading h1 {
+.title {
   font-size: 4rem;
   font-weight: 800;
 }
 
 .desc {
-  width: 100%;
-  line-height: 1.5em;
+  padding-top: 0.5em;
+  font-size: 1.25rem;
   color: var(--darkGrayBlue);
 }
 
-.read-more {
-  margin: 2em 0;
-  border: none;
-  height: 50px;
-  width: 200px;
+.button {
+  margin-top: 2.5em;
   background-color: var(--softRed);
   color: var(--offWhite);
-  font-weight: 700;
-}
-
-.read-more:hover {
-  cursor: pointer;
-  color: var(--offWhite);
-  background-color: var(--darkBlue);
-}
-
-.right {
-  padding: 1em;
-  background-color: var(--darkBlue);
-  color: var(--offWhite);
-}
-
-.right h2 {
-  color: var(--softOrange);
-}
-
-.right ul {
-  list-style: none;
-}
-
-.right li {
-  padding: 1em 0;
-}
-
-.right li h2,
-p {
-  padding: 1em 0;
-}
-
-.right p {
-  font-size: 0.95rem;
-  color: var(--darkGrayBlue);
-}
-
-.right h3:hover {
-  cursor: pointer;
-  color: var(--softOrange);
-}
-
-.article-row {
-  margin-top: 2em;
-}
-
-.article-row ul {
+  height: 50px;
+  width: 200px;
   display: flex;
-  gap: 8em;
+  justify-content: center;
+  align-items: center;
 }
 
-.article-row ul li {
-  list-style: none;
-  max-width: 20em;
+.right-side {
+  padding: 2em;
+  background-color: var(--darkBlue);
+}
+
+.right-side h2 {
+  font-size: 2rem;
+  color: var(--softOrange);
+}
+
+.right-side ul {
+  height: 80%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right-side h3 {
+  color: var(--offWhite);
+  margin-bottom: 1em;
+}
+
+.right-side li {
+  color: var(--grayBlue);
+}
+
+hr {
+  margin: 2em 0;
+}
+
+.article-view .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.article-box {
   display: flex;
   gap: 1em;
 }
 
-.article-row ul li p,
-.article-row ul li h4 {
-  padding-top: 1em;
-}
-
-.article-row ul li h3 {
+.article-about h1 {
   color: var(--grayBlue);
-  font-size: 2rem;
+  font-size: 2.25em;
 }
 
-.article-row ul li p {
-  color: var(--darkGrayBlue);
+.article-about h2 {
+  font-size: 1rem;
+  color: var(--darkBlue);
 }
 
-.article-row ul li h4:hover {
-  cursor: pointer;
+.article-about p {
+  padding-top: 2em;
+}
+
+/* Hover States */
+
+.nav a:hover {
   color: var(--softRed);
 }
 
+.button:hover {
+  background-color: var(--darkBlue);
+}
 
-footer {
-    margin-top: 8em;
-    display: flex;
-    justify-content: center;
-    align-items: end;
+.right-side h3:hover {
+  color: var(--softOrange);
+}
+
+.article-about h2:hover {
+  color: var(--softRed);
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 800px) {
+  .container, .headline{
+    flex-direction: column;
+  }
+
 }
