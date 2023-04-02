@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  /* Primary */
+  --lightred: hsl(0, 100%, 67%);
+  --orangeyellow: hsl(39, 100%, 56%);
+  --greenteal: hsl(166, 100%, 37%);
+  --cobaltblue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  --lightSlateBlue: hsl(252, 100%, 67%);
+  --lightRoyalBlue: hsl(241, 81%, 54%);
+
+  /* Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  --paleBlue: hsl(221, 100%, 96%);
+  --lightLavender: hsl(241, 100%, 89%);
+  --darkGrayBlue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.results,
+.summary {
+  width: 18em;
+  height: 25em;
+}
+
+.results {
+  background-image: linear-gradient(
+    var(--lightSlateBlue),
+    var(--lightRoyalBlue)
+  );
+  border-radius: 1.5em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  gap: 1em;
+}
+
+.results h1 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.results div {
+  margin-top: 1em;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 4em;
+  background-image: linear-gradient(var(--lightRoyalBlue), var(--darkGrayBlue));
+}
+
+.results div h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.results div p {
+  font-size: 0.75rem;
+  color: var(--lightLavender);
+}
+
+.results h2 {
+  margin-top: 1em;
+}
+
+.results p {
+  color: var(--lightLavender);
+}
+
+.summary {
+  padding: 1.6em;
+}
+
+.summary h1 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.summary ul {
+  margin-top: 2em;
+  height: 260px;
+}
+
+.sum {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.sum h3 {
+  flex-grow: 2;
+}
+
+.sum:nth-child(1) h3 {
+  color: var(--lightred);
+}
+
+.sum:nth-child(2) h3 {
+  color: var(--orangeyellow);
+}
+
+.sum:nth-child(3) h3 {
+  color: var(--greenteal);
+}
+
+.sum:nth-child(4) h3 {
+  color: var(--cobaltblue);
+}
+
+.sum p {
+  color: var(--darkGrayBlue);
+  font-weight: 700;
+}
+
+.sum span {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+.button {
+  height: 50px;
+  background-color: var(--darkGrayBlue);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-image: linear-gradient(var(--lightRoyalBlue), var(--darkGrayBlue));
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .results, .summary {
+    text-align: center;
+    min-width: 100%;
+    height: 100%;
+  }
+
+  .results {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    gap: 0.75em;
+  }
+
+  .results div {
+    width: 100px;
+    height: 100px;
+    padding: 1em;
+  }
+
+  .sum {
+    text-align: left;
+  }
+}
